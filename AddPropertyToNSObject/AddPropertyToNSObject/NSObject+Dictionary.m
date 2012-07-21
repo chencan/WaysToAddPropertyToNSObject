@@ -13,8 +13,18 @@ static NSMutableDictionary *dictionaryForAddProperty = nil;
 @implementation NSObject (Dictionary)
 + (void)clearDictionary {
     
-    [dictionaryForAddProperty removeAllObjects];
+    [dictionaryForAddProperty release];
+    dictionaryForAddProperty = nil;
     
+}
+
+- (void)romveObjectInDictionay:(NSObject *)object forKey:(NSString *)aKey {
+    
+    NSString *key = [NSString stringWithFormat:@"%p_%@", self, aKey];
+    
+    NSLog(@"Remove (%@, %@)", key, [self objectForKeyInDictionay:aKey]);
+    
+    [dictionaryForAddProperty removeObjectForKey:key];
 }
 
 - (void)setObjectInDictionay:(NSObject *)object forKey:(NSString *)aKey {
