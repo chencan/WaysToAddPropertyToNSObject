@@ -10,6 +10,7 @@
 		3695D74115BA520200C97FA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3695D74015BA520200C97FA9 /* Foundation.framework */; };
 		3695D74415BA520200C97FA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3695D74315BA520200C97FA9 /* main.m */; };
 		3695D74815BA520200C97FA9 /* AddPropertyToNSObject.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3695D74715BA520200C97FA9 /* AddPropertyToNSObject.1 */; };
+		3695D75015BA528D00C97FA9 /* NSObject+Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3695D74F15BA528D00C97FA9 /* NSObject+Dictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		3695D74315BA520200C97FA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3695D74615BA520200C97FA9 /* AddPropertyToNSObject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AddPropertyToNSObject-Prefix.pch"; sourceTree = "<group>"; };
 		3695D74715BA520200C97FA9 /* AddPropertyToNSObject.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AddPropertyToNSObject.1; sourceTree = "<group>"; };
+		3695D74E15BA528D00C97FA9 /* NSObject+Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dictionary.h"; sourceTree = "<group>"; };
+		3695D74F15BA528D00C97FA9 /* NSObject+Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				3695D74315BA520200C97FA9 /* main.m */,
+				3695D74E15BA528D00C97FA9 /* NSObject+Dictionary.h */,
+				3695D74F15BA528D00C97FA9 /* NSObject+Dictionary.m */,
 				3695D74715BA520200C97FA9 /* AddPropertyToNSObject.1 */,
 				3695D74515BA520200C97FA9 /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3695D74415BA520200C97FA9 /* main.m in Sources */,
+				3695D75015BA528D00C97FA9 /* NSObject+Dictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
