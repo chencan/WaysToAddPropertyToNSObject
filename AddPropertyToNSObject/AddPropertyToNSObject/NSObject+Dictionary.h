@@ -10,6 +10,6 @@
 
 @interface NSObject (Dictionary)
 + (void)clearDictionary;
-- (void)setObject:(NSObject *)object forKey:(NSString *)aKey;
-- (id)objectForKey:(NSString *)aKey;
+- (void)setObjectInDictionay:(NSObject *)object forKey:(NSString *)aKey;
+- (id)objectForKeyInDictionay:(NSString *)aKey;
 @end

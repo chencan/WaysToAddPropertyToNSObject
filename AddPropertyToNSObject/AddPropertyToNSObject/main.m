@@ -18,8 +18,8 @@ int main(int argc, const char * argv[])
         NSLog(@"Hello, World!");
         
         NSNumber *number = [NSNumber numberWithInt:1];
-        [number setObject:[NSNumber numberWithInt:2] forKey:nil];
-        NSLog(@"%@ has property %@", number, [number objectForKey:nil]);
+        [number setObjectInDictionay:[NSNumber numberWithInt:2] forKey:nil];
+        NSLog(@"%@ has property %@", number, [number objectForKeyInDictionay:nil]);
         
     }
     return 0;

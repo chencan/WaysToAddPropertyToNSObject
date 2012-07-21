@@ -17,7 +17,7 @@ static NSMutableDictionary *dictionaryForAddProperty = nil;
     
 }
 
-- (void)setObject:(NSObject *)object forKey:(NSString *)aKey {
+- (void)setObjectInDictionay:(NSObject *)object forKey:(NSString *)aKey {
     
     if (!dictionaryForAddProperty) {
         dictionaryForAddProperty = [[NSMutableDictionary dictionary] retain];
@@ -31,7 +31,7 @@ static NSMutableDictionary *dictionaryForAddProperty = nil;
     
 }
 
-- (id)objectForKey:(NSString *)aKey {
+- (id)objectForKeyInDictionay:(NSString *)aKey {
     
     NSString *key = [NSString stringWithFormat:@"%p_%@", self, aKey];
     
