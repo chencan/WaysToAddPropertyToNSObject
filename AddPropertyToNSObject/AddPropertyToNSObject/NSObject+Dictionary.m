@@ -11,11 +11,19 @@
 static NSMutableDictionary *dictionaryForAddProperty = nil;
 
 @implementation NSObject (Dictionary)
-+ (void)clearDictionary {
+- (void)clearDictionary {
     
-    [dictionaryForAddProperty release];
-    dictionaryForAddProperty = nil;
+    NSMutableArray *keyArray = [NSMutableArray array];
     
+    for (id key in [dictionaryForAddProperty allKeys]) {
+        if ([key isKindOfClass:[NSString class]]) {
+            if ([key hasPrefix:[NSString stringWithFormat:@"%p", self]]) {
+                [keyArray addObject:key];
+            }
+        }
+    }
+    
+    [dictionaryForAddProperty removeObjectsForKeys:keyArray];
 }
 
 - (void)romveObjectInDictionay:(NSObject *)object forKey:(NSString *)aKey {

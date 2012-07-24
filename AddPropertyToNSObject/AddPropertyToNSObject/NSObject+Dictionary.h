@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (Dictionary)
-+ (void)clearDictionary;
+- (void)clearDictionary;
 - (void)setObjectInDictionay:(NSObject *)object forKey:(NSString *)aKey;
 - (void)romveObjectInDictionay:(NSObject *)object forKey:(NSString *)aKey;
 - (id)objectForKeyInDictionay:(NSString *)aKey;
